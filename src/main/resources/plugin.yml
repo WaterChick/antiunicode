@@ -1,0 +1,6 @@
+name: antiunicode
+version: '1.0'
+main: dev.waterchick.antiunicode.Antiunicode
+author: Water_Chick
+api-version: '1.20'
+softdepend: [Oraxen]

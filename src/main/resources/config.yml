@@ -1,0 +1,26 @@
+# Choose the mode you want to use:
+# - ORAXEN:
+#     - Allows only characters defined in Oraxen's configuration file with the property `is_emoji: true`.
+#     - Requires the Oraxen plugin to be installed. If Oraxen is missing or improperly configured,
+#       you may encounter errors during the plugin's loading or runtime process.
+#
+# - NEXO:
+#     - Allows only characters defined in Nexo's configuration file with the property `is_emoji: true`.
+#     - Requires the Nexo plugin to be installed. If Nexo is missing or improperly configured,
+#       you may encounter errors during the plugin's loading or runtime process.
+#
+# - LIST:
+#     - Allows only characters defined manually in the LIST_CHARS section below.
+#     - Does not require Oraxen.
+
+mode: ORAXEN
+
+# -------------------------------------
+# LIST MODE - DISABLED CHARACTERS
+# -------------------------------------
+
+# Works only when using LIST mode.
+# Add the characters you want to DISALLOW here.
+LIST_CHARS:
+  - 'ꐙ'
+  - 'ꐟ'
