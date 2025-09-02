@@ -13,7 +13,7 @@
 #     - Allows only characters defined manually in the LIST_CHARS section below.
 #     - Does not require Oraxen.
 
-mode: ORAXEN
+mode: NEXO
 
 # -------------------------------------
 # LIST MODE - DISABLED CHARACTERS

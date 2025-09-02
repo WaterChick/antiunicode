@@ -2,6 +2,7 @@ package dev.waterchick.antiunicode;
 
 import dev.waterchick.antiunicode.managers.CharManager;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 public class Listener implements org.bukkit.event.Listener {
@@ -12,7 +13,7 @@ public class Listener implements org.bukkit.event.Listener {
         this.charManager = charManager;
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGH)
     public void onChat(AsyncPlayerChatEvent event){
         String message = event.getMessage();
         message = charManager.removeChars(message);
